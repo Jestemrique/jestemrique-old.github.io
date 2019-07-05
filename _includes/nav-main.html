@@ -1,7 +1,23 @@
-<nav>
-    {% for item in site.data.nav-main %}
-        <a href="{{ item.link }}" {% if page.url == item.link %}class="current" {% endif %}>
-            {{ item.name }}
-        </a>
-    {% endfor %}
+<nav >
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo right ">Logo</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="left hide-on-med-and-down">
+            {% for item in site.data.nav-main %}
+                <li><a href="{{ item.link }}" {% if page.url == item.link %}class="current" {% endif %}>
+                        {{ item.name }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
 </nav>
+
+<ul class="sidenav" id="mobile-demo">
+        {% for item in site.data.nav-main %}
+        <li><a href="{{ item.link }}" {% if page.url == item.link %}class="current" {% endif %}>
+                {{ item.name }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>
