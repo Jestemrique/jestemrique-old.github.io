@@ -12,8 +12,17 @@
 
 .post{
     font-family: $body-family;
+    margin-bottom: 1.5rem;
 }
 
-.post__title{
+  .post__title{
     font-family: $body-family;
-}
+    margin-bottom: 1.5rem;
+  }
+  .post__excerpt{
+      //padding: 2rem;
+      margin-bottom: 1rem;
+  }
+  .post__footer{
+      padding: 0.5rem;
+  }
