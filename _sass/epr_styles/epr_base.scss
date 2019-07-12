@@ -1,4 +1,19 @@
-.epr-test{
-    color: red;
-    
+
+//Font face.
+.epr-roboto{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+
+}
+.epr-robot-slab{
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+
+.post{
+    font-family: $body-family;
+}
+
+.post__title{
+    font-family: $body-family;
 }

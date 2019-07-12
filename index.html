@@ -2,11 +2,20 @@
 layout: page_layout
 title: Home
 ---
-<ul>
-    {%  for post in site.posts %}
-        <li>
-            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-            <p>{{ post.excerpt }}</p>
-        </li>
-    {% endfor %}
-</ul>
+
+
+    
+        {%  for post in site.posts %}
+        <div class="columns">
+            <div class="column is-full">
+                <div class="post">
+                <h2 class="title post__title is-3"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <p>{{ post.excerpt }}</p>
+                <p>{{ post.date | date_to_string }} - {{ post.author }} </p>
+                <p>{{ post.categories }}</p>
+                <hr>
+            </div>
+            </div>
+        </div>
+        {% endfor %}
+    

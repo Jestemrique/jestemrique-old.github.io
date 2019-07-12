@@ -1,3 +1,18 @@
-.current{
-    color: red;
-}
+$body-family: "Roboto Slab";
+$body-font-size: 1.3rem;
+$title-family: "Roboto";
+$title-weight: 300;
+
+//links
+$link: #ff8844;
+$link-visited: #cccccc; 
+$link-hover: #ff4444;
+$link-hover-border: $link-hover;
+$link-focus: $link;
+$link-focus-border: $link;
+$link-active: $link;
+$link-active-border: $link;
+
+@import "bulma/bulma";
+
+@import "epr_styles/epr_base";
