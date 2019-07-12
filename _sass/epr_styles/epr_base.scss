@@ -9,7 +9,7 @@
     font-family: 'Roboto Slab', sans-serif;
 }
 
-
+//posts.
 .post{
     font-family: $body-family;
     margin-bottom: 1.5rem;
@@ -25,4 +25,17 @@
   }
   .post__footer{
       padding: 0.5rem;
+  }
+
+//Categories.
+.category{
+    margin-bottom: 1rem;
+}
+  .category__title{
+    font-family: $title-family;
+    //margin-bottom: 0.5rem;
+  }
+
+  .category__body{
+      padding-left: 1rem;
   }

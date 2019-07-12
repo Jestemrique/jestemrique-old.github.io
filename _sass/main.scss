@@ -1,12 +1,18 @@
+//general settings
+$epr-orange: #ff8844; 
+$epr-orange-dark: #ff4444;
+$epr-light-grey: #cccccc;
+
+//bulma variables
 $body-family: "Roboto Slab";
 $body-font-size: 1.3rem;
 $title-family: "Roboto";
 $title-weight: 300;
-
+$text: grey;
 //links
-$link: #ff8844;
-$link-visited: #cccccc; 
-$link-hover: #ff4444;
+$link: $epr-orange;
+$link-visited: $epr-light-grey; 
+$link-hover: $epr-orange-dark;
 $link-hover-border: $link-hover;
 $link-focus: $link;
 $link-focus-border: $link;
@@ -14,7 +20,7 @@ $link-active: $link;
 $link-active-border: $link;
 
 //tags
-$tag-color: #ff8844;
+$tag-color: $epr-orange;
 
 @import "bulma/bulma";
 
