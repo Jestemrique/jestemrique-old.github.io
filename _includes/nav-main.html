@@ -12,7 +12,7 @@
         
             <div class="navbar-end">
                 {% for item in site.data.nav-main %}
-                <a href="{{ item.link }}" class="navbar-item {% if page.url == item.link %}is-active" {% endif %} " >{{ item.name }}</a>
+                <a href="{{ item.link }}" class="navbar-item {% if page.url == item.link %}is-active {% endif %} " >{{ item.name }}</a>
                 {% endfor %}
             </div>
         
