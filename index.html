@@ -2,46 +2,38 @@
 layout: page_layout
 title: Home
 ---
-
-
-    
-{%  for post in site.posts %}
-<div class="columns">
-    <div class="column is-full">
-        <div class="post">
-            <div class="post__title">
-                <h2 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-            </div>
-            <div class="post__excerpt">
-                {{ post.excerpt }}</p>
-            </div>
-            
-            
-            <div class="columns is-centered">
-                <div class="column is-narrow">
-                    
-                        {{ post.date | date_to_string }} - {{ post.author }}
-                    
+{% for post in site.posts %}
+    <section class="section">
+        <div class="container">
+            <div class="epr_post">
+                <div class="epr-post__title">
+                    <h1 class="title">{{post.title}}</h1>            
                 </div>
-            </div>
-            
-            <div class="columns is-centered">
-                    <div class="column is-narrow">
-                        <div class="tags are-medium">
-                        {% for category in post.categories %}
-                        <span class="tag">{{ category }}</span>
-                        {% endfor %}
+                <div class="epr-post__excerpt">
+                    <p>{{post.excerpt}}</p>
+                </div>  
+
+                <div class="epr-post__footer">
+
+                    <div class="columns">
+                        <div class="column">
+                            {{ post.date | date_to_string }} - {{ post.author }}
+                        </div>
                     </div>
-                </div>
+
+                    <div class="columns">
+                        <div class="column">
+                            <div class="tags are-medium">
+                                {% for category in post.categories %}
+                                    <span class="tag">{{ category }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>                  
             </div>
             
-
-
-
+                
         </div>
-        <!--<hr>-->
-    </div>
-    </div>
-
-{% endfor %}
-
+    </section>
+{% endfor %}        

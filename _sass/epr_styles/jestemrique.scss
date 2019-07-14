@@ -1,0 +1,50 @@
+
+
+//Hero
+.hero{
+  &.has-background{
+    position: relative;
+    overflow: hidden;
+  }
+  &-background{
+    position: absolute;
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+    &.is-transparent{
+      opacity: 0.5;
+    }
+  }
+}
+
+//posts.
+// .post{
+//     font-family: $body-family;
+//     margin-bottom: 1.5rem;
+// }
+
+//   .post__title{
+//     font-family: $body-family;
+//     margin-bottom: 1.5rem;
+//   }
+//   .post__excerpt{
+//       //padding: 2rem;
+//       margin-bottom: 1rem;
+//   }
+//   .post__footer{
+//       padding: 0.5rem;
+//   }
+
+//Categories.
+// .category{
+//     margin-bottom: 1rem;
+// }
+//   .category__title{
+//     font-family: $title-family;
+//     //margin-bottom: 0.5rem;
+//   }
+
+//   .category__body{
+//       padding-left: 1rem;
+//   }
