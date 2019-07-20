@@ -1,13 +1,22 @@
+//Epr colors:
+
+$epr-orange: #ebb77d;
+
 //Bulma variables
+$body-font-size: 1.5em;
 
-
+//Links
+$link: $epr-orange;
 
 
 //Bulma components.
 @import "bulma/sass/utilities/_all";
 @import "bulma/sass/base/_all";
-@import "bulma/sass/elements/container";
+
 @import "bulma/sass/grid/columns";
+
+@import "bulma/sass/elements/container";
+@import "bulma/sass/elements/title";
 
 
 @import "bulma/sass/layout/hero";
@@ -15,5 +24,5 @@
 
 //epr styles.
 @import "epr_styles/jestemrique";
-@import "epr_styles/debug";
+//@import "epr_styles/debug";
 
