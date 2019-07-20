@@ -1,12 +1,22 @@
-//Epr colors:
 
+//Epr colors:
 $epr-orange: #ebb77d;
+
+//epr fonts
+$epr-body-family: "Assistant";
 
 //Bulma variables
 $body-font-size: 1.5em;
 
+//Font family
+$family-primary: "Rokkitt"; 
+//$title-family: true;
+$title-weight: 100;
+
+
+
 //Links
-$link: $epr-orange;
+//$link: $epr-orange;
 
 
 //Bulma components.
@@ -17,6 +27,8 @@ $link: $epr-orange;
 
 @import "bulma/sass/elements/container";
 @import "bulma/sass/elements/title";
+@import "bulma/sass/elements/tag";
+
 
 
 @import "bulma/sass/layout/hero";

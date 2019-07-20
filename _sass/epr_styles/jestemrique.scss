@@ -2,6 +2,8 @@
 
 //Hero
 .hero{
+  border-bottom: 2px solid #999999;
+  font-family: "Assistant";
   &.has-background{
     position: relative;
     overflow: hidden;
@@ -18,9 +20,66 @@
   }
 }
 
+//Colors
+$epr-grey: #aaaaaa;
+$epr-orange: #ff6262;
+//$epr-orange: #ff0000;
 
+//Titles
+.title{
+  font-family: "Assistant";
+}
 //links:
 .epr-link{
   color:$epr-orange;
   border-bottom: 1px dotted $epr-orange;
+  &:hover{
+    //border-bottom: 1px dotted $epr-orange;
+    color: #ff0000;
+  }
 }
+
+
+
+//epr-posts
+.epr-post{
+  margin-bottom: 3rem;
+  .epr-post__title{
+    margin-bottom: 1rem;
+  }
+  .epr-post__body, .epr-post__excerpt{
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #cccccc;
+  }
+
+  .epr-post__footer{
+    color: $epr-orange;
+  }
+
+  .epr-post__tag{
+    @extend .tag;
+    font-family: $epr-body-family;
+    color: $epr-orange!important;
+  }
+
+}
+
+
+//epr-pages
+.epr-page{
+  padding-right: 20px;
+  padding-left: 20px;
+
+  .epr-page__header{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+}
+
+.epr-color-fondo{
+  background-color: #3043f0;
+}
+
+
+
