@@ -3,7 +3,8 @@
 $epr-orange: #ebb77d;
 
 //epr fonts
-$epr-body-family: "Assistant";
+$epr-body-family: "Rokkitt";
+$epr-title-family: "Assistant";
 
 //Bulma variables
 $body-font-size: 1.5em;
@@ -25,9 +26,12 @@ $title-weight: 100;
 
 @import "bulma/sass/grid/columns";
 
+@import "bulma/sass/form/_all";
+
 @import "bulma/sass/elements/container";
 @import "bulma/sass/elements/title";
 @import "bulma/sass/elements/tag";
+
 
 
 

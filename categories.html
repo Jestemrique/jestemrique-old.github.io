@@ -3,27 +3,85 @@ layout: page_layout
 title: Categories
 ---
 <section class="section">
-<div class="columns">
-    <div class="column">
-        <div class="field is-grouped is-grouped-multiline">
-            {% for category  in site.categories %}
-                <div class="control">  
-                    <div class="tags has-addons ">  
-                        <span class="tag"> <a href="#{{category[0] }}"> {{ category[0] | capitalize}}</a></span>
-                        <span class="tag">{{ category[1].size }}</span>
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
+<div class="container">
+<header>
+
+
+
+
+<div class="field is-grouped is-grouped-multiline">
+  {% for category  in site.categories %}
+    <div class="control">
+    <div class="tags are-medium  has-addons">
+      
+      <span class="epr-tag ">
+        <a class="epr-link--no-decoration" href="#{{category[0] }}"> {{ category[0] | capitalize}}</a>
+      </span>
+
+      <span class="epr-tag ">
+        <span class="has-text-grey">{{ category[1].size }}</span>
+      </span>
     </div>
+    </div>
+  {% endfor %}
 </div>
 
-</section>
 
 
+
+</header>
 <hr>
+
+
+
+
+
+
+
+
+
+
 {% for category  in site.categories %}
-<section class="section">
+    <div class="epr-category">
+    
+        <div class="epr-category__title"> 
+            <h2 class="is-5">{{category[0] | capitalize}} [{{category[1].size}}]</h2>
+        </div>
+        <div class="epr-category__body">
+            <ul>
+                {% for post  in category[1] %}
+                    <li>
+                      <a class="epr-link is-5" href="{{ post.url }}">{{ post.title }}</a> - <span class="is-size-6">{{post.date | date_to_string}}</span>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        
+    </div>
+
+{% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- {% for category  in site.categories %}
 <div class="columns">
 <div class="column">
     
@@ -39,5 +97,16 @@ title: Categories
     
 </div>
 </div>
+
+{% endfor %} -->
+
+
+
+
+
+
+
+
+
+</div>
 </section>
-{% endfor %}

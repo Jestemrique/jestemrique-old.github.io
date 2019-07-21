@@ -37,9 +37,20 @@ $epr-orange: #ff6262;
     //border-bottom: 1px dotted $epr-orange;
     color: #ff0000;
   }
+
 }
 
+.epr-link--no-decoration{
+  @extend .epr-link;
+  border: none;
+}
 
+//epr tags
+.epr-tag{
+  @extend .tag;
+  font-family: 'Assistant';
+  color: $epr-orange!important;
+}
 
 //epr-posts
 .epr-post{
@@ -56,11 +67,7 @@ $epr-orange: #ff6262;
     color: $epr-orange;
   }
 
-  .epr-post__tag{
-    @extend .tag;
-    font-family: $epr-body-family;
-    color: $epr-orange!important;
-  }
+  
 
 }
 
@@ -81,5 +88,16 @@ $epr-orange: #ff6262;
   background-color: #3043f0;
 }
 
-
+//epr-categories
+.epr-category{
+  margin-bottom: 1.5rem;
+  .epr-category__title{
+    font-family: $epr-title-family;
+    //color: $epr-orange;
+  }
+  .epr-category__body{
+    padding-left: 1rem;
+  }
+ 
+}
 

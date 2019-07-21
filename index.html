@@ -2,6 +2,8 @@
 layout: page_layout
 title: Home
 ---
+
+
 {% for post in site.posts %}
 <section class="section">
         <div class="container">
@@ -33,7 +35,7 @@ title: Home
             
                 <div class="tags are-medium is-pulled-right">
                 {% for category in post.categories %}
-                  <span class="epr-post__tag">{{ category }}</span>
+                  <span class="epr-tag">{{ category }}</span>
                 {% endfor %}
                 </div>
 
