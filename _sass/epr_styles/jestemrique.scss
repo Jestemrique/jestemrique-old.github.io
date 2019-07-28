@@ -7,7 +7,7 @@
 
 //Hero
 .hero{
-  border-bottom: 2px solid #999999;
+  border-bottom: 2px solid #777777;
   font-family: "Assistant";
   &.has-background{
     position: relative;
@@ -20,7 +20,7 @@
     width: 100%;
     height: 100%;
     &.is-transparent{
-      opacity: 0.8;
+      opacity: 1;
     }
   }
 }
@@ -57,24 +57,6 @@ $epr-orange: #ff6262;
   color: $epr-orange!important;
 }
 
-//epr-posts
-.epr-post{
-  margin-bottom: 3rem;
-  .epr-post__title{
-    margin-bottom: 1rem;
-  }
-  .epr-post__body, .epr-post__excerpt{
-    margin-bottom: 0.5rem;
-    border-bottom: 1px solid #cccccc;
-  }
-
-  .epr-post__footer{
-    color: $epr-orange;
-  }
-
-  
-
-}
 
 
 //epr-pages
@@ -105,4 +87,28 @@ $epr-orange: #ff6262;
   }
  
 }
+
+
+
+//epr-posts
+.epr-post{
+
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 3rem;
+  .epr-post__header{
+    margin-bottom: 1rem;
+    color: $epr-orange;
+
+  }
+  .epr-post__body, .epr-post__excerpt{
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #cccccc;
+  }
+
+  .epr-post__footer{
+    color: $epr-orange;
+  }
+}
+
 

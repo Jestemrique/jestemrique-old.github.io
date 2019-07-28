@@ -28,14 +28,17 @@ $title-weight: 100;
 
 @import "bulma/sass/form/_all";
 
-@import "bulma/sass/elements/container";
-@import "bulma/sass/elements/title";
-@import "bulma/sass/elements/tag";
+
+@import "bulma/sass/elements/_all";
+// @import "bulma/sass/elements/container";
+// @import "bulma/sass/elements/title";
+// @import "bulma/sass/elements/tag";
 
 
 
 
-@import "bulma/sass/layout/hero";
+
+@import "bulma/sass/layout/_all";
 @import "bulma/sass/components/navbar";
 
 //epr styles.
